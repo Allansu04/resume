@@ -1,0 +1,709 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all {
+  width: 100%;
+  position: relative;
+}
+
+
+
+header {
+  position: relative;
+  height: 100px;
+
+}
+
+.headlist
+
+/*網頁表單超連結整個的DIV*/
+  {
+  font-size: 18px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #072b61;
+  z-index: 20;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.headlist table
+
+/*網頁表單清單表格*/
+  {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+}
+
+
+.headlist td
+
+/*設計表單超聯結的內容*/
+  {
+  height: 50px;
+  width: 150px;
+  min-width: 100px;
+  text-align: center;
+  background-color: #072b61;
+}
+
+.headlist td:hover
+
+/*設計表單超聯結的內容*/
+  {
+  background-color: #075583;
+  transition: 0.5s;
+  border-radius: 30%;
+}
+
+.footer
+
+/*網業尾巴的設定*/
+  {
+  font-size: 18px;
+  width: 100%;
+  height: 65px;
+  background-color: #072b61;
+  outline: 8px solid #072b61;
+  margin-top: 60px;
+  position: relative;
+  bottom: 0;
+  float: left;
+  z-index: 2;
+  font-style: italic;
+  color: red;
+  font-size: border;
+}
+
+.footer table {
+  position: absolute;
+  left: 8%;
+  width: 80%;
+
+
+}
+
+.footer td {
+  vertical-align: top;
+  width: 3%;
+  border-collapse: collapse;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+#instagram {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.IG {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  float: left;
+  font-size: 20px;
+}
+
+#gmail {
+
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.Gmail {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  float: left;
+  font-size: 20px;
+}
+
+#facebook {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.FB {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  float: left;
+  font-size: 20px;
+}
+
+#cellphone {
+  position: relative;
+  left: 50%;
+  float: left;
+  font-size: 20px;
+}
+
+.CP {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  float: left;
+  font-size: 20px;
+  color: white;
+}
+
+.cm {
+  height: 500px;
+  width: 20%;
+  position: relative;
+  left: 15%;
+
+  float: left;
+
+}
+
+text {
+  color: white;
+}
+
+.coverflow {
+  width: 500px;
+  height: 400px;
+  float: left;
+  position: relative;
+  left: 25%;
+}
+
+.coverflow>a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+  -webkit-animation: silder 15s linear infinite;
+  animation: silder 15s linear infinite;
+}
+
+.coverflow>a>img {
+  max-width: 100%;
+}
+
+/*動畫關鍵影格*/
+@-webkit-keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+/*每個圖片各延遲5秒*/
+.coverflow>a:nth-child(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.coverflow>a:nth-child(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.coverflow>a:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/*滑入時停止播放*/
+.coverflow:hover>a {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+
+
+form {
+  width: 40%;
+  height: 410px;
+  position: relative;
+  left: 20%;
+  float: left;
+
+
+}
+
+
+
+
+
+
+
+
+body {
+  text-align: justify;
+  background-color: #0f7777;
+  padding: 0;
+  margin: 0;
+
+}
+
+.absl
+
+/*首頁的圖片的框架*/
+  {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+
+}
+
+.text
+
+/*首頁的圖片的內容*/
+  {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 500;
+
+}
+
+.absl img
+
+/*首頁的圖片*/
+  {
+  width: 80%;
+  position: relative;
+  left: 12%;
+}
+
+
+
+
+.title1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 0 50px 0;
+  font-weight: 900;
+  color: #313131;
+  font-size: 45px;
+  font-weight: bold;
+  animation: color-cg 10s infinite linear alternate;
+}
+
+@keyframes color-cg {
+  0% {
+
+    color: blue;
+  }
+
+  10% {
+
+    color: #8e44ad;
+  }
+
+  20% {
+
+    color: #1abc9c;
+  }
+
+  30% {
+
+    color: #d35400;
+  }
+
+  40% {
+
+    color: blue;
+  }
+
+  50% {
+
+    color: #34495e;
+  }
+
+  60% {
+
+    color: blue;
+  }
+
+  70% {
+
+    color: #2980b9;
+  }
+
+  80% {
+
+    color: #f1c40f;
+  }
+
+  90% {
+
+    color: #2980b9;
+  }
+
+  100% {
+
+    color: pink;
+  }
+}
+
+.absl_img2 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  position: relative;
+  left: 5%;
+}
+
+/*圖片框架all*/
+.absl_img2 img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.absl_img2 img:hover {
+  opacity: 1;
+  transform: scale(1.10);
+  transition: 0.8s;
+  border-radius: 40%;
+}
+
+
+.ab table:hover {
+  opacity: 1;
+  transform: scale(1.10);
+  transition: 0.8s;
+
+}
+
+.ab {
+  width: 65%;
+  height: 100%;
+  float: left;
+
+}
+
+
+
+.ab table {
+  text-align: center;
+  font-size: 25px;
+  width: 90%;
+  height: 400px;
+  table-layout: fixed;
+  position: relative;
+  left: 10%;
+  border: solid 1px;
+  background-color: rgba(12, 194, 109, 0.4);
+
+}
+
+text {
+  position: relative;
+  bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/*文字框架*/
+.absl_text {
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+
+/*文字框架2*/
+.absl_text2 {
+  float: left;
+  width: 45%;
+  position: relative;
+  left: 4.5%;
+  line-height: 200%;
+  font-weight: 900;
+}
+
+li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+
+
+
+hr {
+  margin: auto;
+  width: 60%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.clean {
+  clear: left;
+}
+
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#skill {
+  width: 90%;
+  background-color: #21e7e7ee;
+  padding: 30px;
+  display: block;
+  border-radius: 100px;
+  margin: auto;
+}
+
+
+
+.text
+
+/*首頁的圖片的內容*/
+  {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 500;
+
+}
+
+.absl img
+
+/*首頁的圖片*/
+  {
+  width: 80%;
+  position: relative;
+  left: 12%;
+}
+
+.textcontant {
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 8%;
+  bottom: 1%;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.textcontant:hover
+
+/*首頁的圖片特效*/
+  {
+  opacity: 1;
+  transition: 0.8s;
+  border-radius: 25%;
+  transition: 1s;
+}
+
+.text:hover .absl_img
+/*首頁的圖片特效*/
+
+  {
+  opacity: 1;
+  transition: 0.8s;
+  border-radius: 25%;
+  transition: 1s;
+
+
+}
+
+.textcontant h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #EEEE00;
+  text-align: center;
+
+}
+
+.textcontant h2::after {
+  content: '';
+  display: flex;
+  width: 75%;
+  height: 2px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #FFFFBB;
+
+}
+
+.ww {
+  columns: 2;
+  column-rule: gray solid 1px;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+
+.imgw {
+  width: 50%;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+.imgw:hover {
+  -webkit-animation: sucaijiayuan 1s .1s ease both;
+  -moz-animation: tada 1s .1s ease both;
+}
+
+@-webkit-keyframes sucaijiayuan {
+  0% {
+    -webkit-transform: scale(1)
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale(0.8) rotate(-2deg)
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(2deg)
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-2deg)
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0)
+  }
+
+  p {
+    text-indent: 2em;
+    position: relative;
+    left: 3%;
+    width: 90%;
+  }
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 113, 104, 0.4);
+}
+
+.circle::after {
+  content: "";
+  display: block;
+  background-color: #02005B;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.p90,
+.p180,
+.p270,
+.p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #FF7168;
+}
+
+.p180 {
+  top: 50%;
+}
+
+.p270 {
+  left: 0;
+  top: 50%;
+}
+
+.p360 {
+  left: 0;
+  top: 0;
+}
+
+.block {
+  position: relative;
+  top: 40px;
+  left: 20%;
+}
+
+.listSkill {
+  display: flex;
+
+
+}
+
+.listSkill li {
+  width: 15%;
+  height: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}

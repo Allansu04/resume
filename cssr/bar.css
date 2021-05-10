@@ -1,0 +1,99 @@
+.skillbar {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+    border-radius: 3%;
+
+}
+
+#skill {
+    width: 80%;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+.skillbar.html .title {
+    background-color: #c96300
+}
+
+.skillbar.html .filled {
+    background-color: #ff8817
+}
+
+.skillbar.css .title {
+    background-color: #0f5487
+}
+
+.skillbar.css .filled {
+    background-color: #0994f0
+}
+
+.skillbar.js .title {
+    background-color: #b98a06
+}
+
+.skillbar.js .filled {
+    background-color: #f8ca4d
+}
+
+
+.skillbar.my .title {
+    background-color: #3d4670
+}
+
+.skillbar.my .filled {
+    background-color: #5864a2
+}
+
+.skillbar.java .title {
+    background-color: #08dd4f
+}
+
+.skillbar.java .filled {
+    background-color: #0cb322
+}
+
+
+
+.skillbar .title {
+    background-color: rgba(163, 81, 81, 0.1);
+
+    text-align: center;
+    left: 0;
+    color: #f0f0f0;
+    border-radius: 5px 0 0 5px
+}
+
+.skillbar .percent,
+.skillbar .title {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    z-index: 9
+}
+
+.skillbar .percent {
+    right: 0;
+    color: #000;
+    font-weight: 700
+}
+
+.skillbar .filled {
+    z-index: 8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 80, 80, .3);
+    height: 100%;
+    width: 20px;
+    border-radius: 5px 0 0 5px
+}
